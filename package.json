@@ -1,0 +1,33 @@
+{
+  "name": "react-hooks-compilation",
+  "version": "1.0.0",
+  "description": "Compilation of looks to use in react.js",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cl••••i": "^3.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielogregorio/react-hooks-compilation.git"
+  },
+  "keywords": ["react-hooks", "hooks"],
+  "author": "Gabriel Gregorio da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielogregorio/react-hooks-compilation/issues"
+  },
+  "homepage": "https://github.com/gabrielogregorio/react-hooks-compilation#readme"
+}
