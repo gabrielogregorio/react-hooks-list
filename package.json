@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-pack",
+  "name": "react-hooks-list",
   "version": "1.0.0",
   "description": "Pack of hooks to use in react.js ",
   "main": "./build/index.js",
