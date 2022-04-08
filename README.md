@@ -23,14 +23,25 @@ This project is a collection of react hooks, for now, my study project.
 ![GitHub language count](https://img.shields.io/github/languages/count/gabrielogregorio/react-hooks-list)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gabrielogregorio/react-hooks-list) ![statements](./coverage/badge-statements.svg) ![branchs](./coverage/badge-branches.svg) ![functions](./coverage/badge-functions.svg) ![lines](./coverage/badge-lines.svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1958d8d41fa0496cba7f145b8cfa2adb)](https://www.codacy.com/gh/gabrielogregorio/react-hooks-list/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gabrielogregorio/react-hooks-list&amp;utm_campaign=Badge_Grade)
 
+## What is it for?
+
+First for studies, then to make available a series of common hooks that you may need
+
 ## How use package
 ### Use steps
 Used to count steps
 
 ```typescript
+/*
+step: number => counter steps, initial is 0
+nextStep: Function => update step
+prevStep: Function => update step
+reset: Function => update step to 0
+*/
 const { step, nextStep, prevStep, reset } = useSteps();
 ```
-## Available scripts
+## for collaborators
+### Available scripts
 ```bash
 # Install packages
 npm install
@@ -60,6 +71,15 @@ npm link ../my-test-project/node_modules/react
 npm link "react-hooks-list"
 ```
 
+## Semantic version packages
+
+| Type Version | Description | Comand | update example |
+|---------------|------------|--------|------------------|
+| major | Added changes with breaking compatibility with the previous one | npm version majo | X.0.0 |
+| minor | Added changes with backwards compatibility | npm version minor | 0.X.0 |
+| patch | bug fix | npm version patch | 0.0.X |
+
+> Then upload a git push --tags
 ## Vscode extensions for this project
 
 | Extension | Description | Author |
