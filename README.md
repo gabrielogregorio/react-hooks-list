@@ -9,7 +9,6 @@
 ![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 
-  
 <a href="https://www.npmjs.com/package/react-hooks-list" target="blank">React Hooks List - NPM</a>
 </div>
 
@@ -22,7 +21,7 @@ This project is a collection of react hooks, for now, my study project.
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielogregorio/react-hooks-list?style=flat-square)
 ![GitHub contributors](https://img.shields.io/github/contributors/gabrielogregorio/react-hooks-list)
 ![GitHub language count](https://img.shields.io/github/languages/count/gabrielogregorio/react-hooks-list)
-![GitHub repo size](https://img.shields.io/github/repo-size/gabrielogregorio/react-hooks-list) ![statements](./coverage/badge-statements.svg) ![branchs](./coverage/badge-branches.svg) ![functions](./coverage/badge-functions.svg) ![lines](./coverage/badge-lines.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/gabrielogregorio/react-hooks-list) ![statements](./coverage/badge-statements.svg) ![branchs](./coverage/badge-branches.svg) ![functions](./coverage/badge-functions.svg) ![lines](./coverage/badge-lines.svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1958d8d41fa0496cba7f145b8cfa2adb)](https://www.codacy.com/gh/gabrielogregorio/react-hooks-list/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gabrielogregorio/react-hooks-list&amp;utm_campaign=Badge_Grade)
 
 ## How use package
 ### Use steps
@@ -31,10 +30,6 @@ Used to count steps
 ```typescript
 const { step, nextStep, prevStep, reset } = useSteps();
 ```
-## Contributing with project
-
-Read [Contributing.md](CONTRIBUTING.md)
-
 ## Available scripts
 ```bash
 # Install packages
@@ -64,17 +59,7 @@ npm link ../my-test-project/node_modules/react
 ## ~/my-test-project
 npm link "react-hooks-list"
 ```
-### Tests
-```bash
-# Tests with react testing library and cypress(e2e)
-yarn test
-yarn cypress
 
-# Tests in watch mode and coverage
-yarn test:watch-all
-yarn test:watch-all:coverage
-
-```
 ## Vscode extensions for this project
 
 | Extension | Description | Author |
