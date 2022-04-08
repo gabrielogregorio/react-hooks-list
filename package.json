@@ -1,29 +1,76 @@
 {
   "name": "react-hooks-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pack of hooks to use in react.js ",
   "main": "./build/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "jest": "jest",
+    "jest:watchAll": "jest --watchAll",
+    "jest:coverage": "jest --coverage && jest-coverage-badges"
   },
-  "dependencies": {
-    "react": "^16.12.0"
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.3.0",
-    "style-loader": "^1.0.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "eslint": "8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.5.1",
+    "jest-coverage-badges": "^1.1.2",
+    "prettier": "^2.6.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.4.3"
   },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "jsdom",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "coverageDirectory": "<rootDir>/coverage/",
+    "coverageReporters": ["json-summary", "text", "lcov"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gabrielogregorio/react-hooks-compilation.git"
   },
-  "keywords": ["react-hooks", "hooks"],
+  "keywords": [
+    "react-hooks",
+    "hooks"
+  ],
   "author": "Gabriel Gregorio da Silva",
   "license": "ISC",
   "bugs": {

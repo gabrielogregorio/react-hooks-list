@@ -1,4 +1,7 @@
-/src
+dist
 .babelrc
-webpack.config.js
-node_modules
+.storybook
+.gitignore
+.prettierrc
+rollup.config.js
+tsconfig.json
